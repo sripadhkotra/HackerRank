@@ -1,0 +1,17 @@
+int findDigits(int n) {
+    int i,r=0,temp=n,count=0;
+    while(n!=0)
+    {
+        r=n%10;
+        if(r!=0)
+        {
+            if(temp%r==0)
+            {
+                count++;
+            }
+        }
+        n=n/10;
+    }
+
+return count;
+}
