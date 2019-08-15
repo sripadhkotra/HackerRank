@@ -1,0 +1,13 @@
+int utopianTree(int n) {
+    int h=1,i;
+    for(i=1;i<=n;i++)
+    {
+        if(i%2==0)
+        {
+          h+=1;  
+        }
+        else{
+            h*=2;
+        }
+    }
+    return h;
