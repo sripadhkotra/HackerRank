@@ -1,0 +1,18 @@
+int beautifulDays(int i, int j, int k) {
+  int sum = 0, r = 0, diff = 0, count = 0, temp, x;
+  for (x = i; x <= j; x++) {
+      sum=0;
+      temp=x;
+    while (temp != 0) {
+      r = temp % 10;
+      sum = (sum * 10) + r;
+      temp =temp/ 10;
+    }
+    diff = abs(sum - x);
+    if (diff % k == 0)
+    {
+      count++;
+  }
+  }
+  return count;
+}
