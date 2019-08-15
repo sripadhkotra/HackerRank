@@ -1,0 +1,19 @@
+int designerPdfViewer(int h_count, int* h, char* word) {
+    int i,j,max=0,width=0,area=0;
+    for(i=0;i<word[i]!='\0';i++)
+    {
+        width+=1;
+        for(j=0;j<h_count;j++)
+        {
+            if(word[i]-97==j)
+            {
+                if(h[j]>max)
+                {
+                    max=h[j];
+                }
+            }
+        }
+    }
+    area=width*max;
+return area;
+}
