@@ -1,0 +1,12 @@
+int squares(int a, int b) {
+   long int i,sqr=0,count=0;
+    for(i=0;sqr<=b;i++)
+    {
+        sqr=i*i;
+        if(sqr>=a&&sqr<=b)
+        {
+            count+=1;
+        }
+    }
+return count;
+}
