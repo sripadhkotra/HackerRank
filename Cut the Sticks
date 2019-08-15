@@ -1,0 +1,30 @@
+int* cutTheSticks(int arr_count, int* arr, int* result_count) {
+    int j,i,min=9999,stick=0,z=0;
+    static int a[100]={0};
+  for (j = 0; j < arr_count; j++)
+  {
+      stick =0;
+      min=99;
+    for(i=0;i<arr_count;i++)
+    {
+        if(arr[i]<min&&arr[i]!=0)
+        {
+            min=arr[i];
+        }
+    }
+    for (i = 0; i < arr_count; i++)
+    {
+        if(arr[i]!=0)
+        {
+            stick+=1;
+            arr[i]=arr[i]-min;
+        }
+    }
+    if(stick>0)
+    {
+    a[z++]=stick;
+    }
+  }
+  *result_count=z;
+  return a;
+}
