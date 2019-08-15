@@ -1,0 +1,21 @@
+void countApplesAndOranges(int s, int t, int a, int b, int apples_count, int* apples, int oranges_count, int* oranges) {
+  int o = 0, a1 = 0, apptemp = 0, orrtemp = 0, i;
+  for (i = 0; i < apples_count; i++) {
+    if (apples[i] > 0) {
+      apptemp = a + apples[i];
+      if (apptemp >= s && apptemp <= t) {
+        a1++;
+      }
+    }
+  }
+  for (i = 0; i < oranges_count; i++) {
+    if (oranges[i] < 0) {
+      orrtemp = b + oranges[i];
+      if (orrtemp <= t && orrtemp >= s) {
+        o++;
+      }
+    }
+  }
+  printf("%d\n", a1);
+  printf("%d", o);
+}
