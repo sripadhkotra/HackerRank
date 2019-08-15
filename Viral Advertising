@@ -1,0 +1,11 @@
+int viralAdvertising(int n) {
+    int shared = 5,i=0,cumulative=0,liked;
+    while(i<n)
+    {
+        liked=floor(shared/2);
+        cumulative+=liked;
+        shared=liked*3;
+        i+=1;
+    }
+    return cumulative;
+}
