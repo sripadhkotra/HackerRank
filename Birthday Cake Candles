@@ -1,0 +1,18 @@
+int birthdayCakeCandles(int ar_count, int* ar) {
+    int max=ar[0],count=0,i;
+    for(i=0;i<ar_count;i++)
+    {
+        if(ar[i]>max)
+        {
+          max=ar[i];
+        }
+    }
+    for (i = 0; i < ar_count; i++)
+    {
+        if(ar[i]==max)
+        {
+            count++;
+        }
+    }
+    return count;
+}
