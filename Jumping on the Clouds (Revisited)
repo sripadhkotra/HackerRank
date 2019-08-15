@@ -1,0 +1,16 @@
+int jumpingOnClouds(int c_count, int* c, int k) {
+    int e=100,i;
+    for(i=0;i<c_count;)
+    {
+        if(c[i]==0)
+        {
+            e-=1;
+        }
+        if(c[i]==1)
+        {
+            e-=3;
+        }
+        i+=k;
+    }
+    return e;
+}
