@@ -1,0 +1,17 @@
+int howManyGames(int p, int d, int m, int s) {
+    int temp=p,count=0;
+    while(temp<=s)
+    {
+        if(p>m)
+        {
+        p=p-d;
+        if(p<m)
+        {
+            p=m;
+        }
+        }
+        temp=temp+p;
+        count=count+1;
+    }
+        return count;
+}
