@@ -1,0 +1,11 @@
+int introTutorial(int V, int arr_count, int* arr) {
+    int i,j;
+    for(i=0;i<arr_count;i++)
+    {
+        if(arr[i]==V)
+        {
+            j=i;
+        }
+    }
+        return j;
+}
